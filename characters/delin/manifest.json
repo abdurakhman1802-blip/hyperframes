@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "name": "DELIN",
+    "files": [
+      "hero/01-salem-hello.png",
+      "hero/02-tangalu-surprised.png",
+      "hero/03-oilanu-thinking.png",
+      "hero/04-quanu-joy.png",
+      "hero/05-tusindiru-explaining.png",
+      "hero/06-sheshim-decision.png",
+      "hero/07-relaks-relax.png",
+      "hero/08-wave.png",
+      "hero/09-curious.png",
+      "hero/10-shocked.png",
+      "hero/11-laughing.png",
+      "hero/12-panic.png",
+      "hero/13-wink-thumbsup.png",
+      "hero/ref-desk-calm.jpg",
+      "hero/ref-desk-explaining.png",
+      "hero/ref-desk-wave.jpg"
+    ]
+  },
+  "agents": [
+    "agents/01-scenarist.png",
+    "agents/02-montazher-editor.png",
+    "agents/03-dizainer-designer.png",
+    "agents/04-zertteushi-researcher.png",
+    "agents/05-analytic.png",
+    "agents/06-josparlaushy-planner.png",
+    "agents/07-smm.png",
+    "agents/08-satu-sales.png",
+    "agents/09-qarjy-finance.png",
+    "agents/10-komekshi-assistant.png",
+    "agents/11-qauipsizdik-security.png"
+  ],
+  "agents_alt": [
+    "agents-alt/analytic.png",
+    "agents-alt/avtomattandyrushy-automator.png",
+    "agents-alt/dizainer-designer.png",
+    "agents-alt/ideia-generatory-idea-generator.png",
+    "agents-alt/josparlaushy-planner.png",
+    "agents-alt/koldau-support.png",
+    "agents-alt/montazher-editor.png",
+    "agents-alt/scenarist.png",
+    "agents-alt/smm.png",
+    "agents-alt/zertteushi-researcher.png"
+  ],
+  "scenes": [
+    "scenes/storyboard-1-0-5s-intro.png",
+    "scenes/storyboard-2-5-15s-agents-appear.png",
+    "scenes/storyboard-3-15-30s-agents-work.png",
+    "scenes/storyboard-4-30-45s-twist.png",
+    "scenes/storyboard-5-45-55s-fix-everything.png",
+    "scenes/storyboard-6-55-60s-question.png",
+    "scenes/team-ai-hub.png",
+    "scenes/team-group-wide.png"
+  ],
+  "sheets": [
+    "sheets/sheet-11-agents-storyboard.png",
+    "sheets/sheet-team-roles.png"
+  ]
+}
