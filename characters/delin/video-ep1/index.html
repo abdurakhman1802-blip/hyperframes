@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { width: 100%; height: 100%; position: relative; background: #000; overflow: hidden; }
+      .vo, .vi { position: absolute; inset: 0; }
+      .vi video { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 30; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="27.7" data-width="1080" data-height="1920">
+      <div id="v1-o" class="vo" style="z-index:1"><div id="v1-i" class="vi">
+        <video id="v1" class="clip" src="assets/video/01-intro.mp4" data-start="0" data-duration="6.4" data-media-start="2.0" data-track-index="0" data-has-audio="true" data-fade-in="0.12" data-fade-out="0.2" playsinline></video>
+      </div></div>
+      <div id="v2-o" class="vo" style="z-index:2"><div id="v2-i" class="vi">
+        <video id="v2" class="clip" src="assets/video/02-team.mp4" data-start="6.05" data-duration="5.6" data-media-start="0.5" data-track-index="1" data-has-audio="true" data-fade-in="0.12" data-fade-out="0.2" playsinline></video>
+      </div></div>
+      <div id="v3-o" class="vo" style="z-index:3"><div id="v3-i" class="vi">
+        <video id="v3" class="clip" src="assets/video/03-montazher.mp4" data-start="11.3" data-duration="5.3" data-media-start="0.3" data-track-index="0" data-has-audio="true" data-fade-in="0.12" data-fade-out="0.2" playsinline></video>
+      </div></div>
+      <div id="v4-o" class="vo" style="z-index:4"><div id="v4-i" class="vi">
+        <video id="v4" class="clip" src="assets/video/04-research.mp4" data-start="16.25" data-duration="6.9" data-media-start="0.6" data-track-index="1" data-has-audio="true" data-fade-in="0.12" data-fade-out="0.2" playsinline></video>
+      </div></div>
+      <div id="v5-o" class="vo" style="z-index:5"><div id="v5-i" class="vi">
+        <video id="v5" class="clip" src="assets/video/05-sales.mp4" data-start="22.8" data-duration="4.9" data-media-start="0.6" data-track-index="0" data-has-audio="true" data-fade-in="0.12" data-fade-out="0.2" playsinline></video>
+      </div></div>
+      <div id="s1-intro" data-composition-id="s1-intro" data-composition-src="compositions/s1-intro.html" data-start="0" data-duration="6.05" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:20"></div>
+      <div id="s2-team" data-composition-id="s2-team" data-composition-src="compositions/s2-team.html" data-start="6.05" data-duration="5.25" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:20"></div>
+      <div id="s3-montazher" data-composition-id="s3-montazher" data-composition-src="compositions/s3-montazher.html" data-start="11.3" data-duration="4.95" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:20"></div>
+      <div id="s4-research" data-composition-id="s4-research" data-composition-src="compositions/s4-research.html" data-start="16.25" data-duration="6.55" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:20"></div>
+      <div id="s5-sales" data-composition-id="s5-sales" data-composition-src="compositions/s5-sales.html" data-start="22.8" data-duration="4.9" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:20"></div>
+      <div id="flash" data-layout-ignore></div>
+      <audio id="sx-pop1" class="clip" src="assets/sfx/pop.wav" data-start="0.38" data-duration="0.12" data-track-index="5" data-volume="0.4"></audio>
+      <audio id="sx-wh1" class="clip" src="assets/sfx/whoosh.wav" data-start="5.85" data-duration="0.6" data-track-index="3" data-volume="0.55"></audio>
+      <audio id="sx-pop2" class="clip" src="assets/sfx/pop.wav" data-start="6.43" data-duration="0.12" data-track-index="5" data-volume="0.4"></audio>
+      <audio id="sx-wh2" class="clip" src="assets/sfx/whoosh.wav" data-start="11.1" data-duration="0.6" data-track-index="3" data-volume="0.55"></audio>
+      <audio id="sx-pop3" class="clip" src="assets/sfx/pop.wav" data-start="11.68" data-duration="0.12" data-track-index="5" data-volume="0.4"></audio>
+      <audio id="sx-wh3" class="clip" src="assets/sfx/whoosh.wav" data-start="16.05" data-duration="0.6" data-track-index="3" data-volume="0.3"></audio>
+      <audio id="sx-flash" class="clip" src="assets/sfx/flash.wav" data-start="16.25" data-duration="0.5" data-track-index="4" data-volume="0.5"></audio>
+      <audio id="sx-pop4" class="clip" src="assets/sfx/pop.wav" data-start="16.63" data-duration="0.12" data-track-index="5" data-volume="0.4"></audio>
+      <audio id="sx-wh4" class="clip" src="assets/sfx/whoosh.wav" data-start="22.6" data-duration="0.6" data-track-index="3" data-volume="0.55"></audio>
+      <audio id="sx-pop5" class="clip" src="assets/sfx/pop.wav" data-start="23.18" data-duration="0.12" data-track-index="5" data-volume="0.4"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const T = 0.35;
+      // slow push-in on every shot so no frame sits still
+      tl.fromTo("#v1-i", { scale: 1 }, { scale: 1.06, duration: 6.4, ease: "none" }, 0);
+      tl.fromTo("#v2-i", { scale: 1 }, { scale: 1.06, duration: 5.6, ease: "none" }, 6.05);
+      tl.fromTo("#v3-i", { scale: 1 }, { scale: 1.06, duration: 5.3, ease: "none" }, 11.3);
+      tl.fromTo("#v4-i", { scale: 1 }, { scale: 1.06, duration: 6.9, ease: "none" }, 16.25);
+      tl.fromTo("#v5-i", { scale: 1 }, { scale: 1.06, duration: 4.9, ease: "none" }, 22.8);
+      // 1 -> 2: zoom-through
+      tl.fromTo("#v1-o", { scale: 1, opacity: 1, filter: "blur(0px)" }, { scale: 1.6, opacity: 0, filter: "blur(14px)", duration: T, ease: "power4.in" }, 6.05);
+      tl.fromTo("#v2-o", { scale: 0.55, opacity: 0, filter: "blur(14px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: T, ease: "power4.out" }, 6.05);
+      // 2 -> 3: whip pan left
+      tl.fromTo("#v2-o", { x: 0, filter: "blur(0px)" }, { x: -1080, filter: "blur(18px)", duration: T, immediateRender: false, ease: "power4.inOut" }, 11.3);
+      tl.fromTo("#v3-o", { x: 1080, filter: "blur(18px)" }, { x: 0, filter: "blur(0px)", duration: T, ease: "power4.inOut" }, 11.3);
+      // 3 -> 4: white flash cut
+      tl.fromTo("#flash", { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "power2.in" }, 16.25);
+      tl.fromTo("#v4-o", { opacity: 0 }, { opacity: 1, duration: 0.01 }, 16.36);
+      tl.fromTo("#v4-o", { scale: 1.12 }, { scale: 1, duration: 0.5, ease: "power3.out", immediateRender: false }, 16.37);
+      tl.to("#flash", { opacity: 0, duration: 0.35, ease: "power2.out" }, 16.37);
+      // 4 -> 5: swipe up
+      tl.fromTo("#v4-o", { y: 0, filter: "blur(0px)" }, { y: -700, filter: "blur(12px)", duration: T, ease: "power4.inOut", immediateRender: false }, 22.8);
+      tl.fromTo("#v5-o", { y: 1920 }, { y: 0, duration: T, ease: "power4.inOut" }, 22.8);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

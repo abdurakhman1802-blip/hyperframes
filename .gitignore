@@ -201,3 +201,5 @@ chrome/
 # Python bytecode from running skill scripts
 __pycache__/
 *.pyc
+characters/delin/video-ep1/.hyperframes/
+characters/delin/video-ep1/node_modules/
